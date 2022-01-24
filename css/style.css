@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4a8bb6;
+    height: 100%;
+    background: linear-gradient(to top left, powderblue, pink) no-repeat ;
+}
+.container {
+    width: 600px;
+    background-color: #89b2ce;
+    border: 5px solid #232049; 
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.form {
+    width: 100%;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bmi-title {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-family: inherit;
+    font-weight: 600;
+    color:#232049;
+    text-align: left;
+}
+.bmi-text {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    color: #494747;
+    text-align: left;
+}
+.bmi-form {
+    width: 45%;
+    position: relative;
+}
+.bmi-form__label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #232049;
+    display: block;
+    margin-bottom: 5px;
+}
+.bmi-form__input {
+    box-sizing:border-box;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+.bmi-form__input:hover {
+    outline: 2px solid #232049;
+    transition: outline .1s linear;
+}
+.bmi-form__input:focus-visible {
+    outline: 2px solid #232049;
+    transition: outline .1s linear;
+}
+
+.bmi-form__jednostka {
+    position: absolute;
+    top: 57%;
+    right:  2%;
+    padding: 0 10px;
+    width: 44px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    text-align: center;
+    background-color: #bebebe;
+    border-radius: 50px;
+}
+.submit-btn {
+    width: 100%;
+    margin: 40px 0;
+    padding: 6px 70px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #83ccd9;
+    border-color: #83ccd9;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    color:#83ccd9;
+    background-color: #e0f1f4;
+    transition-duration: .3s;
+}
+.bmi-result {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 6px 70px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #83ccd9;
+    border-color: #83ccd9;
+    border-radius: 8px;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 250px;
+    }
+    .bmi-title{
+        font-size: 25px;
+    }
+    .bmi-text {
+        font-size: 15px;
+    }
+    .bmi-form {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .bmi-form__label {
+        font-size: 15px;
+    }
+    .bmi-form__jednostka {
+        top: 52%;
+    }
+    .submit-btn {
+        font-size: 15px;
+    }
+    .label-result {
+        font-size: 15px;
+    }
+    .bmi-result {
+        font-size: 15px;
+        display: block;
+        padding: 6px 10px;     
+    }
+}
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+    

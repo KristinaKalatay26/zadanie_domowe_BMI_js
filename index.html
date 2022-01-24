@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator BMI</title>
+</head>
+<body>
+    <div class="bmi">
+        <div class="container">
+            <h1 class="bmi-title">Kalkulator BMI</h1>
+            <p class="bmi-text">Uzupełnij poniższe dane i oblicz swoje BMI</p>
+            <form class="form">
+                <div class="flex">
+                    <div class="bmi-form">
+                        <label class="bmi-form__label">Wzrost</label>
+                        <input class="bmi-form__input" id="height" name="height" placeholder="Wpisz swój wzrost...">
+                        <span class="bmi-form__jednostka">cm</span>
+                    </div>
+                    <div class="bmi-form">
+                        <label class="bmi-form__label">Waga</label>
+                        <input class="bmi-form__input" id="weight" name="weight" placeholder="Wpisz swoją wagę...">
+                        <span class="bmi-form__jednostka">kg</span>
+                    </div>
+                </div>
+                <button class="submit-btn" type="submit">Oblicz BMI</button>
+                <label class="bmi-form__label">Twoje BMI wynosi:  </label>
+                <output class="bmi-result" id="result"></output>
+            </form>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
